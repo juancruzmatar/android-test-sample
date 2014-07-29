@@ -2,9 +2,9 @@
 
 In general, you may not need this. :p
 
-<code>
-$ cd SimpleNoteTests
+```
+$ cd SimpleNote/tests
 $ ant emma debug install test
-$ cd ..
+$ cd ../..
 $ ant sonar
-</code>
+```

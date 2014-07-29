@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="sonar" basedir="." default="help">
+    <property file="local.properties"/>
+    <property file="sonar-project.properties"/>
+
+    <target name="sonar"> 
+        <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+            <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+            <classpath path="./lib/sonar-ant-task-2.1.jar" />
+        </taskdef>
+        <!-- Run sonar -->
+        <sonar:sonar xmlns:sonar="antlib:org.sonar.ant" />
+    </target>
+</project>
